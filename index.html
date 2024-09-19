@@ -1,114 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!--we will add the meta data in the head --> 
-   <head>
+<!--we will add the meta data in the head -->
+
+<head>
     <meta charset="UTF-8">
     <meta name="author" content="Sham">
-    <meta name="description" content="Learn HTML" >
+    <meta name="description" content="Learn HTML">
     <title>
         HTML
     </title>
     <link rel="icon" href="icon.png" type="image/png">
     <!--This is a relative reference because the image is in the same file tree-->
     <link rel="stylesheet" href="main.css" type="text/css">
-   </head> 
+</head>
 
-   <body>
-    <h1>
-        Hello world!
-    </h1>
-    <p>I am <a href="aboutme.html">Kuruthash Akith.</a></p>
-    <hr>
-    <p>Main menu</p>
-    <nav>
-    <ul>
-        <li><a href="#chapter03">chapter 03</a></li>
-        <li><a href="#chapter04">chapter 04</a></li>
-        <li><a href="#chapter05">chapter 05</a></li>
-    </ul>
-    </nav>
+<body>
+    <header>
+        <h1>
+            Hello world!
+        </h1>
+        <p>I am <a href="aboutme.html">Kuruthash Akith.</a></p>
+        <hr>
+        <p>Main menu</p>
+        <!--naming or labelling the nav-->
+        <nav aria-label="primary-navigation">
+            <!--making connection between nav and the h2.
+            <nav aria-labelledby="primary-navigation"> 
+           <h2 id="primary-navigation">Primary</h2>-->
+            <ul>
+                <li><a href="#chapter03">chapter 03</a></li>
+                <li><a href="#chapter04">chapter 04</a></li>
+                <li><a href="#chapter05">chapter 05</a></li>
+            </ul>
+        </nav>
+    </header>
     <hr>
 
     <!--shift & alt + down arrow to copy and past down any code-->
-    <section id="chapter03">
-    <h2>
-        I am in the chapter 03
-    </h2>
-    <p>
-         HTML tutorial for beginners in Tamil 2024 by Balachandra.
-    </p>
-    <p>
-        &nbsp;&nbsp;&nbsp; I am enjoying this course! <!--to get white spaces-->
-    </p>
-    <p>I can learn from <abbr title="Mozilla developer network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></p>
-    </section>
-    <hr>
-    &lt;&lt;&lt;&lt;&lt;&lt;&copy;copyrights:Sham;&gt;&gt;&gt;&gt;&gt;&gt; <!--to get less and greaternthan symbols-->
-     <!--horizontal rule-->
-    <!--<br> for line brake i.e toavoid white space collapsing-->
-    <!--blog elements will press the enter after the tag. for example headings, paragraphs or ect. inline elements will not press enter. for example em, strong or ect -->
-    <address>3,4 cross street, kalvajal,Chavakachcheri. Jaffna.</address>
-    <hr>
+    <main>
+        <section id="chapter03">
+            <h2>
+                I am in the chapter 03
+            </h2>
+            <p>
+                HTML tutorial for beginners in Tamil 2024 by Balachandra.
+            </p>
+            <p>
+                &nbsp;&nbsp;&nbsp; I am enjoying this course! <!--to get white spaces-->
+            </p>
+            <p>I can learn from <abbr title="Mozilla developer network"><a
+                        href="https://developer.mozilla.org/en-US/">MDN</a></abbr></p>
+        </section>
+        <hr>
+        <!--to get less and greaternthan symbols-->
+        <!--horizontal rule-->
+        <!--<br> for line brake i.e toavoid white space collapsing-->
+        <!--blog elements will press the enter after the tag. for example headings, paragraphs or ect. inline elements will not press enter. for example em, strong or ect -->
 
-    <section id="chapter04">
-    <h2>I am in the chapter 04</h2>
-    <!--ordered list-->
-    <p>
-        ordered list
-    </p>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java script</li>
-        <li>React</li>
-    </ol>
-    <!--unordered list-->
-    <p>
-        unordered list
-    </p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>Java script</li>
-        <li>React</li>
-    </ul>
 
-    <!--description list-->
-    <p>
-        description list
-    </p>
-        <dl>
-            <dt>sham</dt> <dd>Software engineer</dd>
-            <dt>one</dt> <dd>First description</dd>
-            <dt>two</dt> <dd>second description</dd>
-            <dt>three</dt> <dd>third description</dd>
-        </dl>
-    </section>
+        <section id="chapter04">
+            <h2>I am in the chapter 04</h2>
+            <!--ordered list-->
+            <p>
+                ordered list
+            </p>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java script</li>
+                <li>React</li>
+            </ol>
+            <!--unordered list-->
+            <p>
+                unordered list
+            </p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java script</li>
+                <li>React</li>
+            </ul>
+
+            <!--description list-->
+            <p>
+                description list
+            </p>
+            <dl>
+                <dt>sham</dt>
+                <dd>Software engineer</dd>
+                <dt>one</dt>
+                <dd>First description</dd>
+                <dt>two</dt>
+                <dd>second description</dd>
+                <dt>three</dt>
+                <dd>third description</dd>
+            </dl>
+        </section>
         <hr>
 
         <section id="chapter05">
-        <h2>I am in the chapter 05</h2>
-        <p>This is about the anchor tag to create a link</p>
-        <p>The link is <a href="https://validator.w3.org/#validate_by_upload">w3c validator</a>
-        </p>
+            <h2>I am in the chapter 05</h2>
+            <p>This is about the anchor tag to create a link</p>
+            <p>The link is <a href="https://validator.w3.org/#validate_by_upload">w3c validator</a>
+            </p>
         </section>
         <hr>
-        <p>I am in the chapter 06</p>
-        <img src="images/can.jpg" alt="My can do image" title="my image" width="600" height="400" loading="lazy">
-        <br><br><br><br><br>
-        <figure>
-        <img src="images/cat_to_lion.webp" alt="CAt to lion attitude" title="my image" width="600" height="400" loading="lazy">
-        <figcaption>
-            Self confidence is important
-        </figcaption>
-        </figure>
+        <!--using article is more meaningful than section. we can think that there can be some sections inside of an article-->
+        <article>
+            <h2>I am in the chapter 06</h2>
+            <img src="images/can.jpg" alt="My can do image" title="my image" width="600" height="400" loading="lazy">
+            <br><br><br><br><br>
+            <figure>
+                <img src="images/cat_to_lion.webp" alt="CAt to lion attitude" title="my image" width="600" height="400"
+                    loading="lazy">
+                <figcaption>
+                    Self confidence is important
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>Example of HTML code:</figcaption>
+                <code>&lt;h1&gt;Hello world!&lt;h1&gt;</code>
+            </figure>
+            <p><a href="#">Back to top</a></p>
+        </article>
         <hr>
-        <figure>
-            <figcaption>Example of HTML code:</figcaption>
-            <code>&lt;h1&gt;Hello world!&lt;h1&gt;</code>
-        </figure>
-        <p><a href="#">Back to top</a></p>
-        <hr>
+    </main>
+    <footer>
+        <p>
+            &lt;&lt;&lt;&lt;&lt;&lt;&copy;copyrights:Sham;&gt;&gt;&gt;&gt;&gt;&gt;
+        </p>
+        <address>3,4 cross street, kalvajal,Chavakachcheri. Jaffna.</address>
+    </footer>
 
-   </body>
-</html> 
+</body>
+
+</html>
