@@ -31,6 +31,11 @@
                 <li><a href="#chapter03">chapter 03</a></li>
                 <li><a href="#chapter04">chapter 04</a></li>
                 <li><a href="#chapter05">chapter 05</a></li>
+                <li><a href="#chapter06">chapter 05</a></li>
+                <li><a href="#chapter07">chapter 05</a></li>
+                <li><a href="#chapter08">chapter 05</a></li>
+                <li><a href="#chapter09">chapter 05</a></li>
+                <li><a href="#contact">contact me</a></li>
             </ul>
         </nav>
     </header>
@@ -124,7 +129,208 @@
             <p><a href="#">Back to top</a></p>
         </article>
         <hr>
+
+        <article>
+            <h2>I am in the chapter 07</h2>
+            <section>
+                <h3>My daily activities</h3>
+                <aside>
+                    <details>
+                        <summary>Guess the <mark> number of hours</mark> I code per day.</summary>
+                        <p>I start at <time datetime="03:00">3am </time>and I write code for <time datetime="PT3H">3
+                                hours
+                            </time>every morning.</p>
+                    </details>
+                </aside>
+                <br>
+
+                <table>
+                    <caption>My daily schedule</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td><time datetime="08:00">8am </time> - <time datetime="11:00">11am</time></td>
+                            <td>write code</td>
+                            <!--
+                            <th id="morning">Morning</th>
+                            <td headers="timemorning"><time datetime="08:00">8am </time> - <time datetime="11:00">11am</time></td>
+                            <td headers="activitymorning">write code</td>
+                            -->
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Break</th>
+                            <td><time datetime="11:00">11am </time> - <time datetime="12:00">12pm</time></td>
+                            <td>Lunch brake</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td><time datetime="12:00">12pm </time> - <time datetime="18:00">6pm</time></td>
+                            <td>Study time</td>
+                        </tr>
+                        <!--
+                        <tr>
+                            <th>Evening</th>
+                            <td colspan="2">free time</td> 
+                        </tr>   -->
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All other time</td>
+                            <td>free time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Eat, sleep, code and repeat.</td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </section>
+
+        </article>
+        <hr>
+
+        <article id="contact">
+            <h2>I am in the chapter 08</h2>
+            <h3>Contact me:</h3>
+            <p>I would like to hear from you.</p>
+
+            <form action="https://httpbin.org/get", method="get">
+                <fieldset>
+                    <legend>personal details</legend>
+                    <p>
+                        <label for="firstName">First name: </label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Akith" autocomplete="on"
+                            required>
+                        <!--for amd id should be matched-->
+                    </p>
+                    <p>
+                        <label for="lastName
+                ">Last name: </label>
+                        <input type="text" name="lastName
+                " id="firstName" placeholder="Sham" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password: </label>
+                        <input type="password" name="password
+                " id="password" placeholder="XXXXXX" required>
+                    </p>
+                    <p>
+                        <label for="phoneNumber">Phone Number: </label>
+                        <input type="tel" name="phoneNumber
+                " id="phoneNumber" placeholder="0123456789" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                    </p>
+                    <p>
+                        <label for="decade">Fav decade: </label>
+                        <input type="number" name="decade
+                " id="decade" min="1950" max="2021" value="2000" step="10">
+                    </p>
+                    <p>
+                        <label for="content">Fav subject: </label>
+                        <select name="content" id="content" multiple size="5">
+                            <optgroup label="Earn money">
+                                <option value="frontend">Frontend</option>
+                                <option value="backend">backend</option>
+                                <option value="ai" selected>AI</option>
+                                <option value="blogchain">Blockchain</option>
+                            </optgroup>
+                            <optgroup label="Grow money">
+                                <option value="sharemarket">Sharemarket Investing</option>
+                                <option value="trading">Trading</option>
+                            </optgroup>
+                            <optgroup label="Donate money">
+                                <option value="donate">Donating</option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <!-- <p>
+                    <label for="content">Fav content: </label>
+                    <input type="text" name="content" id="content" list="content-list">
+                    <datalist id="content-list">
+
+                        <option value="frontend">
+                        <option value="backend">
+                        <option value="ai" selected>
+                        <option value="blogchain">
+                        <option value="sharemarket">>
+                        <option value="trading">
+                        <option value="donate">
+                </p> -->
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        your fav food
+                    </legend>
+                    <p>
+                        <input type="radio" name="food" id="food" value="chicken">
+                        <label for="chicken">Chicken</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="food" value="mutton">
+                        <label for="mutton">Mutton</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="food" value="beef">
+                        <label for="beef">Beef</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="food" value="veg">
+                        <label for="veg">Veg</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Your fav Juice</legend>
+                    <p>
+                        <input type="checkbox" name="juice" id="mango" value="mango">
+                        <label for="mango">Mango juice</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="juice" id="apple" value="apple">
+                        <label for="apple">Apple juice</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="juice" id="watermelon" value="watermelon">
+                        <label for="watermelon">Watermelon juice</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="juice" id="orange" value="orange">
+                        <label for="orange">Orange juice</label>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Send me a note</legend>
+                    <label for="message">Your message</label>
+                    <p>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here..."></textarea>
+                    </p>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit post</button>
+                <button type="reset">Reset</button>
+                <!--Using post method than get method is safe. because the url doesn't have the details.-->
+            </form>
+            <hr>
+        </article>
     </main>
+
     <footer>
         <p>
             &lt;&lt;&lt;&lt;&lt;&lt;&copy;copyrights:Sham;&gt;&gt;&gt;&gt;&gt;&gt;
